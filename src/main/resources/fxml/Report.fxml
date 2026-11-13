@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="350.0"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mycompany.studentmanagementsystem.controller.ReportController">
+
+    <VBox alignment="CENTER" spacing="15"
+          AnchorPane.leftAnchor="50.0"
+          AnchorPane.rightAnchor="50.0"
+          AnchorPane.topAnchor="20.0">
+
+        <Label text="Class Report" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+        <Label fx:id="resultLabel" text="" style="-fx-text-fill: #333333; -fx-font-size: 14px;" maxWidth="Infinity" />
+
+        <Button text="Back" onAction="#goBack" maxWidth="Infinity" />
+
+    </VBox>
+</AnchorPane>

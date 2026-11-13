@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="350.0"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mycompany.studentmanagementsystem.controller.AddGradeController">
+
+    <VBox alignment="CENTER" spacing="10"
+          AnchorPane.leftAnchor="50.0"
+          AnchorPane.rightAnchor="50.0"
+          AnchorPane.topAnchor="20.0">
+
+        <Label text="Add Grade" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+        <Label text="Select Student ID:" maxWidth="Infinity" />
+        <ComboBox fx:id="studentIds" maxWidth="Infinity" />
+
+        <Label text="Grade:" maxWidth="Infinity" />
+        <TextField fx:id="gradeField" promptText="Enter grade" maxWidth="Infinity" />
+
+        <Label fx:id="resultLabel" text="" style="-fx-text-fill: green;" maxWidth="Infinity" />
+
+        <Button text="Add Grade" onAction="#addGrade" maxWidth="Infinity" />
+        <Button text="Back" onAction="#goBack" maxWidth="Infinity" />
+
+    </VBox>
+</AnchorPane>

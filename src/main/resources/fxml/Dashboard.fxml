@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="350.0"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mycompany.studentmanagementsystem.controller.DashboardController">
+
+    <VBox alignment="CENTER" spacing="15"
+          AnchorPane.leftAnchor="50.0"
+          AnchorPane.rightAnchor="50.0"
+          AnchorPane.topAnchor="50.0">
+
+        <Label text="Dashboard" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+        <Button text="Add Student" onAction="#goToAddStudent" maxWidth="Infinity" />
+        <Button text="View Students" onAction="#goToViewStudents" maxWidth="Infinity" />
+        <Button text="Add Grade" onAction="#goToAddGrade" maxWidth="Infinity" />
+        <Button text="View Report" onAction="#goToReport" maxWidth="Infinity" />
+        <Button text="Save to File" onAction="#saveToFile" maxWidth="Infinity" />
+        <Button text="Load from File" onAction="#loadFromFile" maxWidth="Infinity" />
+        <Label fx:id="resultLabel" text="" style="-fx-text-fill: green;" maxWidth="Infinity" />
+    </VBox>
+</AnchorPane>

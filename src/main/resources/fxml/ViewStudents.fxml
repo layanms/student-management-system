@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0"
+xmlns="http://javafx.com/javafx/17"
+xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.mycompany.studentmanagementsystem.controller.ViewStudentsController">
+ 
+<VBox alignment="CENTER"
+spacing="10"
+AnchorPane.leftAnchor="20"
+AnchorPane.rightAnchor="20"
+AnchorPane.topAnchor="20">
+
+<Label text="View Students"
+style="-fx-font-size:20px; -fx-font-weight:bold;" />
+
+<ScrollPane fitToWidth="true"
+prefHeight="350">
+
+<content>
+
+<Label fx:id="resultLabel"
+wrapText="true"/>
+
+</content>
+
+</ScrollPane>
+
+<Button text="Back"
+onAction="#goBack"
+maxWidth="Infinity"/>
+
+</VBox>
+
+</AnchorPane>

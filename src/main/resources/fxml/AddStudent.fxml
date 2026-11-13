@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="350.0"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mycompany.studentmanagementsystem.controller.AddStudentController">
+
+    <VBox alignment="CENTER" spacing="10"
+          AnchorPane.leftAnchor="50.0"
+          AnchorPane.rightAnchor="50.0"
+          AnchorPane.topAnchor="20.0">
+
+        <Label text="Add Student" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+        <TextField fx:id="idField" promptText="Enter ID" />
+        <TextField fx:id="nameField" promptText="Enter name" />
+        <TextField fx:id="majorField" promptText="Enter major" />
+        <Label fx:id="resultLabel" style="-fx-text-fill: red;" />
+        <Button text="Add Student" onAction="#addStudent" />
+        <Button text="Back" onAction="#goBack" />
+
+    </VBox>
+</AnchorPane>
